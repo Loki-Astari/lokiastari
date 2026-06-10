@@ -1,0 +1,64 @@
+baseURL = 'https://lokiastari.com/'
+locale = 'en-us'
+title = 'Loki Astari'
+theme = 'PaperMod'
+paginate = 10
+
+[params]
+  author = 'Loki Astari'
+  description = 'C++ programming blog'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[params.homeInfoParams]
+  Title = 'Loki Astari'
+  Content = 'C++ programming blog'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[params.math]
+  enable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['$$', '$$']]
+        inline = [['$', '$']]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'categories'
+    name = 'Categories'
+    url = '/categories/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'series'
+    name = 'Series'
+    url = '/series/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 40
