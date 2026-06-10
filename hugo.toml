@@ -1,8 +1,9 @@
-baseURL = 'https://lokiastari.com/'
+baseURL = 'https://thors-anvil.com/'
 locale = 'en-us'
 title = 'Loki Astari'
 theme = 'PaperMod'
 paginate = 10
+disablePathToLower = true
 
 [params]
   author = 'Loki Astari'

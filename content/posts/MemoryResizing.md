@@ -18,7 +18,7 @@ cover:
   caption: Photo by ThisisEngineering RAEng
 ---
 
-So I never really considered why the resize of vector used a constant expansion of 1.5 or 2 (in some popular implementations). That was until I did my previous article series ["Vector"]({{config.site}}/blog/2016/02/27/vector/) where I concentrated a lot on resource management and did a section on [resizing the vector]({{config.site}}/blog/2016/03/12/vector-resize/). Initially, I tried to be clever in the code, a mistake. I used a resize value of 1.62 (an approximation of `Phi`) because I vaguely remembered reading an article that this was the optimum resize factor. When I put this out for code review, it was pointed out that this value was too large, the optimum value must be less than or equal to `Phi` (1.6180339887), and that exceeding this limit made things much worse.
+So I never really considered why the resize of vector used a constant expansion of 1.5 or 2 (in some popular implementations). That was until I did my previous article series ["Vector"](/posts/vector-resourcemanagementallocation/) where I concentrated a lot on resource management and did a section on [resizing the vector](/posts/vector-resize/). Initially, I tried to be clever in the code, a mistake. I used a resize value of 1.62 (an approximation of `Phi`) because I vaguely remembered reading an article that this was the optimum resize factor. When I put this out for code review, it was pointed out that this value was too large, the optimum value must be less than or equal to `Phi` (1.6180339887), and that exceeding this limit made things much worse.
 
 So, I had to know why....
 
