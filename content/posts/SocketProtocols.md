@@ -53,12 +53,12 @@ HTTP(S) defines two objects: a request object sent from the client to the server
 
 For a request object, this is:
 <table><tbody>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Method:</td><td>HEAD/GET/PUT/POST/DELETE</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Space:</td><td>One Space character</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>URL:</td><td>Identification of the object/service needed</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Space:</td><td>One Space character</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>HTTP-Version:</td><td>Usually HTTP/1.1</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>CR/LF:</td><td>Literally '\r\n'</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Method:</td><td>HEAD/GET/PUT/POST/DELETE</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Space:</td><td>One Space character</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">URL:</td><td>Identification of the object/service needed</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Space:</td><td>One Space character</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">HTTP-Version:</td><td>Usually HTTP/1.1</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">CR/LF:</td><td>Literally '\r\n'</td></tr>
 </tbody></table>
 
 #### Example:
@@ -68,12 +68,12 @@ GET https://google.com/maps?id=456 HTTP/1.1\r\n
 
 For a response object, this is:
 <table><tbody>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>HTTP-Version:</td><td>Usually HTTP/1.1</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Space:</td><td>One Space character</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Response Code:</td><td><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">100->599</a></td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Space:</td><td>One Space character</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Human Readable Response:</td><td>Human readable explanation of the response code</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>CR/LF:</td><td>Literally '\r\n'</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">HTTP-Version:</td><td>Usually HTTP/1.1</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Space:</td><td>One Space character</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Response Code:</td><td><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">100->599</a></td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Space:</td><td>One Space character</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Human Readable Response:</td><td>Human readable explanation of the response code</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">CR/LF:</td><td>Literally '\r\n'</td></tr>
 </tbody></table>
 
 #### Example:
@@ -86,11 +86,11 @@ HTTP/1.1 200 OK\r\n
 This is a set of key/value pairs, one per line separated by a colon. Each Line is terminated by CR/LF, and the end of the header section is marked by an empty line.
 
 <table><tbody>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Key:</td><td>A text string representing the keys.</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Colon:</td><td>A single colon (note: some implementations are lax and insert a space before the colon).</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Space:</td><td>One Space character (note: some implementations are lax and more then one space may be present)</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>Value:</td><td>A set of characters that does not include CR or LF.</td></tr>
-<tr><td>&#8226;&nbsp;</td><td style={{width:'300px'}}>CR/LF:</td><td>Literally '\r\n'</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Key:</td><td>A text string representing the keys.</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Colon:</td><td>A single colon (note: some implementations are lax and insert a space before the colon).</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Space:</td><td>One Space character (note: some implementations are lax and more then one space may be present)</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">Value:</td><td>A set of characters that does not include CR or LF.</td></tr>
+<tr><td>&#8226;&nbsp;</td><td style="width: 300px">CR/LF:</td><td>Literally '\r\n'</td></tr>
 </tbody></table>
 
 #### Example
